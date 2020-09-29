@@ -61,6 +61,7 @@ body {
     
 }
 
+
 .info {
     width: 429px;
     margin-left: 12%;
@@ -110,15 +111,25 @@ body {
     top: -46px;
     
 }
-
+#phone_image {
+    
+    position: relative;
+    z-index: 3;
+}
 #circle2 {
     position: relative;
+    top: 130px;
+    left: 12px;
+    
+    z-index: 2;
     
 }
 
 #circle3 {
     position: relative;
-    top: 300px;
+    top: 490px;
+    left: 215px;
+    z-index: 1;
     
 }
 .imagePhone {
@@ -402,4 +413,34 @@ tr {
     background: #F8F8F8;
     color: rgba(34, 34, 34, 0.4)
 
+}
+
+@media only screen and (max-width: 500px) {
+    .imagePhone {
+        display: none;
+       
+    }
+
+    .color_changing {
+        background-color: #26C296;
+    }
+
+    .info {
+        width: 800px; 
+    }
+
+    .infoAndImage {
+      
+    }
+    .info_title {
+        height: 307px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .title1 {
+        width: 47.01px;
+        font-size: 11px;
+        margin-top: 24px;
+    }
 }
