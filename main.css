@@ -3,7 +3,7 @@ body {
     max-width: 1440px;
     margin:auto;
     font-family: Gilroy-Medium;
-    box-shadow: 0px 80px 240px rgba(136, 116, 116, 0.25), 80px -40px 80px rgba(172, 143, 143, 0.13), 40px 16px 80px rgba(172, 143, 143, 0.05);
+    
 
 }
 
@@ -34,7 +34,7 @@ body {
     font-weight: bolder;
 }
 
-.tryIt {
+#navbar_button {
     color: #1943EF;
     border: 1.03958px solid #1943EF;
     width: 118.51px;
@@ -66,19 +66,19 @@ body {
     margin-left: 12%;
 }
 
-.infoTitle {
+.info_title {
     height: 97px;
     font-size: 40.2px;
     font-weight: bold;
     
 }
 
-.infoTitleDecoration {
+.info_title_decoration {
     position: absolute;
  
 }
 
-.infoText {
+.info_text {
     width: 429px;
     height: 66.53;
     line-height: 24px;
@@ -98,7 +98,7 @@ body {
     margin-top: 31px;
     
 }
-.tryIt2 {
+.info_button {
     width: 156px;
     height: 42px;
     background-color: #1943EF;
@@ -140,18 +140,18 @@ body {
 
 .container {
     display: grid;
-    width: 937px;
-    height: 510px;
+    width: 977px;
+    height: 530px;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
-    margin-left: 15%;
+    margin-left: 12%;
     background-color: #F5F5FB;
     border-radius: 20.8px 20.8px 20.8px 20.8px;
     box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
 }
 .sidebar {
-    width: 224.25px;
-    height: 495.53px;
+    width: 204.25px;
+    height: 515.53px;
     background-color: red;
     grid-row: 1 / span 3; 
     grid-column: 1 / 2;
@@ -161,8 +161,8 @@ body {
 }
   
 .topbar {
-    width: 709.29px;
-    height: 56.83px;
+    width: 769.29px;
+    height: 76.83px;
     background-color: green;
     grid-row: 1 / 2;
     grid-column: 2 / span 4;
@@ -171,8 +171,8 @@ body {
     border-radius: 0px 20.8px 0px 0px;
   }
 .hiRohan {
-    width: 675.33px;
-    height: 127.53px;
+    width: 695.33px;
+    height: 137.53px;
     background: #1943EF;
     box-shadow: 0px 6.93056px 27.7222px rgba(0, 0, 0, 0.05);
     border-radius: 11.0889px;
@@ -208,7 +208,7 @@ body {
 
 #roahnVector {
     position: absolute;
-    padding-left: 103px;
+    padding-left: 123px;
 }
 
 .mainMenu {
@@ -234,12 +234,12 @@ body {
     padding-bottom: 440px;
 }
 
-.topbar_Content {
+.topbar_content {
     margin: 14.5px 16.63px 0px 28.76px;
     display: flex;
 }
 
-#search_Top {
+#search_topbar {
     width: 246.23px;
     height: 27.72px;
     background: #FBFBFD;
@@ -278,7 +278,7 @@ body {
 #settings_Icon {
     margin-left: 18.19px;
 }
-#topbar_Time {
+#topbar_time {
     margin-left: 55px;
     color: #222222;
     font-size: 9.7px;
@@ -287,7 +287,7 @@ body {
     top: -4px;
 }
 
-.hiRohan_Text {
+.hiRohan_text {
     margin:22.18px 185px 0px 27.72px;
     width: 381.87;
     color: white;
@@ -306,7 +306,7 @@ body {
     margin-top: 7px;
 }
 
-.get_Started {
+.hiRohan_button {
     width: 102px;
     height: 22.17px;
     background: rgba(255, 255, 255, 0.25);
@@ -319,4 +319,87 @@ body {
     margin-left: 542px;
     position: relative;
     top: -20px;
+}
+
+.meeting_table {
+    width: 262.67;
+    height: 174px;
+    font-size: 9.7px;
+    color: rgba(34, 34, 34, 0.6);
+    font-weight: 500;
+    
+}
+
+.table_top {
+    display: flex;
+    margin: 16.63px 0px 0px 18.02px;
+    justify-content: space-between;
+}
+
+.table_title {
+    
+    font-size: 11.09px;
+    font-weight: 600;
+}
+
+.table_top_svg {
+    position: relative;
+    top: -7px;
+    margin-right: 23px;
+}
+
+.column_table_title {
+    font-size: 9.7px;
+    font-weight: 600;
+    color: #222222;
+    top: 25px;
+    position: relative;
+    left: -25px;
+}
+
+.table_voices {
+    width: 248.81px;
+    position: relative;
+    top: 25px;
+    border-bottom: 0.693056px solid rgba(234, 237, 243, 0.6);
+    
+    padding-left: 15px;
+}
+
+tr {
+    width: 263px;
+    height: 32px;
+}
+
+.left_fix{
+    left: -13px;
+}
+
+.top_fix {
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+
+.table_button {
+    width: 37.56px;
+    height: 16.63px;
+    font-weight: 500;
+    font-size: 9.70278px;
+    background: rgba(38, 194, 150, 0.1);
+    border-radius: 2.77222px;
+    border: rgba(255, 255, 255, 0); 
+    color: #26C296;
+}
+
+.table_button_fix {
+    width: 37.56px;
+    height: 16.63px;
+    font-weight: 500;
+    font-size: 9.70278px;
+    border-radius: 2.77222px;
+    border: rgba(255, 255, 255, 0);
+    background: #F8F8F8;
+    color: rgba(34, 34, 34, 0.4)
+
 }

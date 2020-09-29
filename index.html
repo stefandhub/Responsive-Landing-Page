@@ -15,20 +15,20 @@
             <span>Enterprise </span>
             <span> Pricing </span>
             <span> Login </span>
-            <span><button class="tryIt">Try it for free</button></span>
+            <span><button id="navbar_button">Try it for free</button></span>
         </div>
         
     </div>
     <img id="circle1" src="/Images/circle1.svg" alt="">
     <div class="infoAndImage">
         <div class="info">
-            <span><img class="infoTitleDecoration" src="/Images/dotsSquare.svg" alt=""></span>
-            <span class="infoTitle">Take your relationships to the next level</span>
-            <div class="infoText">The multichannel sales engagement platform which automates personal email outreach, calls, and tasks, while Sales can focus on what really matters - closing deals.</div>
+            <span><img class="info_title_decoration" src="/Images/dotsSquare.svg" alt=""></span>
+            <span class="info_title">Take your relationships to the next level</span>
+            <div class="info_text">The multichannel sales engagement platform which automates personal email outreach, calls, and tasks, while Sales can focus on what really matters - closing deals.</div>
             <div class="email">
                 <label for="emailId"></label>
                 <input id="emailId" type="text" placeholder="Email id">
-                <button class="tryIt2">Try it for free</button>
+                <button class="info_button">Try it for free</button>
             </div>
             <div class="checks">
                 <span><img src="/Images/checkIcon.svg" alt=""> Synced contacts</span>
@@ -45,10 +45,10 @@
     </div>
     <div class="container">
         <div class="sidebar">
-            <div class="relationz">
+            <div class="sidebar_title">
                 Relationz
             </div>
-            <div class="sidebar_List">
+            <div class="sidebar_list">
                 <div class="mainMenu">Main Menu
                     <div><span><img src="/Images/overview.svg" alt=""></span> <span class="sidebar_Menu_Voices">Overview</span> </div>
                     <div><span><img src="/Images/followUp.svg" alt=""></span> <span class="sidebar_Menu_Voices">Follow up</span> </div>
@@ -62,31 +62,108 @@
             </div>
         </div>
         <div class="topbar">
-            <div class="topbar_Content">
+            <div class="topbar_content">
             <span>
                 <span class="glass"><img src="Images/magnifyingGlass.svg" alt=""></span>
-                <label for="search_Top"></label>
-                <input id="search_Top" type="text" placeholder="Find classes, task and anything">
+                <label for="search_topbar"></label>
+                <input id="search_topbar" type="text" placeholder="Find classes, task and anything">
             </span>
             <div class="newTasks">New Tasks</div>
             <div class="topbar_Icons">
                 <img src="Images/notificationBell.svg" alt="">
-                <span id="settings_Icon"><img src="Images/settings.svg" alt=""></span>
-                <span id="topbar_Time">08:10 AM</span>
+                <span id="settings_icon"><img src="Images/settings.svg" alt=""></span>
+                <span id="topbar_time">08:10 AM</span>
             </div>
             </div>  
         </div>
         <div class="hiRohan"> <img id="roahnVector" src="Images/vector.svg" alt="">
-        <div class="hiRohan_Text"> 
+        <div class="hiRohan_text"> 
             <div id="h_r_1">Hi Rohan</div>
             <div id="h_r_2">Welcome to all new Relationz, we have updated just abour 
                             everything to help to stay in touch 
                             with people who matters to you the most.</div>
         </div>
-        <div class="get_Started">Get Started</div>
+        <div class="hiRohan_button">Get Started</div>
         </div>
-        <div class="upcomingMeetings">upcomingMeetings</div>
-        <div class="recentlyAdded">recentlyAdded</div>
+        <div class="upcomingMeetings">
+            <div class="table_top">
+                <div class="table_title">Upcoming Meetings</div>
+                <div class="table_top_svg"><img src="/Images/threedots.svg" alt=""></div>
+            </div>
+        
+            <table class="meeting_table">
+                <tr><th class="column_table_title">Person</th><th class="column_table_title left_fix">Last met on</th><th class="column_table_title left_fix">Meeting date</th></tr>
+                <tr>
+                    <td class="table_voices">
+                        <span><img src="/Images/smallAvatar1.svg" alt=""></span>
+                        <span class="top_fix">Archana</span> </td>
+                     <td class="table_voices">12 Dec, 2019</td>
+                     <td class="table_voices">27 Jan, 2020</td>
+                </tr>
+                <tr>
+                    <td class="table_voices">
+                        <span><img src="/Images/smallAvatar2.svg" alt=""></span>
+                        <span class="top_fix">Surojit</span> </td>
+                        <td class="table_voices">1 Jan, 2020</td>
+                        <td class="table_voices">28 Jan, 2020</td>
+                </tr>
+                <tr>
+                    <td class="table_voices">
+                        <span> <img src="/Images/smallAvatar3.svg" alt=""></span>
+                        <span class="top_fix">Surbhi</span>
+                        <td class="table_voices">19 Nov, 2019</td>
+                        <td class="table_voices">31 Jan, 2020</td>
+                </tr>
+                <tr>
+                    <td class="table_voices">
+                        <span> <img src="/Images/smallAvatar4.svg" alt=""></span>
+                        <span class="top_fix">William</span>
+                    <td class="table_voices">16 Jan, 2020</td>
+                    <td class="table_voices">2 Feb, 2020</td>
+                </tr>
+            </table>
+            
+            
+        </div>
+        <div class="recentlyAdded">
+            <div class="table_title">
+                <div class="table_top">
+                    <div class="table_title">Recently Added</div>
+                    <div class="table_top_svg"><img src="/Images/threedots.svg" alt=""></div>
+                </div>
+            </div>
+            <table class="meeting_table">
+                <tr><th class="column_table_title">Person</th><th class="column_table_title left_fix">Role</th><th class="column_table_title left_fix">Send Email</th></tr>
+                <tr>
+                    <td class="table_voices">
+                        <span><img src="/Images/smallAvatar5.svg" alt=""></span>
+                        <span class="top_fix">Aditya</span> </td>
+                     <td class="table_voices">UI Designer</td>
+                     <td class="table_voices"><button class="table_button">Send</button></td>
+                </tr>
+                <tr>
+                    <td class="table_voices">
+                        <span><img src="/Images/smallAvatar6.svg" alt=""></span>
+                        <span class="top_fix">Bhawna</span> </td>
+                        <td class="table_voices">Developer</td>
+                        <td class="table_voices"><button class="table_button_fix">Sent</button></td>
+                </tr>
+                <tr>
+                    <td class="table_voices">
+                        <span> <img src="/Images/smallAvatar7.svg" alt=""></span>
+                        <span class="top_fix">Sukalp</span>
+                        <td class="table_voices">19 Nov, 2019</td>
+                        <td class="table_voices"><button class="table_button">Send</button></td>
+                </tr>
+                <tr>
+                    <td class="table_voices">
+                        <span> <img src="/Images/smallAvatar8.svg" alt=""></span>
+                        <span class="top_fix">Jenna</span>
+                    <td class="table_voices">Design Manager</td>
+                    <td class="table_voices"><button class="table_button">Send</button></td>
+                </tr>
+            </table>
+        </div>
       </div>      
 </body>
 </html>
