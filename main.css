@@ -692,6 +692,36 @@ tr {
     text-align: center;
     padding-top: 15px;
 }
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 70px 15%;
+}
+.footer_list {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 11.0889px;
+    line-height: 13px;
+    color: #73738D;
+}
+.footer_list_title {
+    font-weight: 600;
+    font-size: 16.6333px;
+    line-height: 13px;
+    color: #222222;
+    margin-bottom: 17px;
+}
+.footer_info {
+    text-align: center;
+}
+.copyright {
+    font-size: 11.0889px;
+    line-height: 13px;
+    color: #73738D;
+}
 
 @media only screen and (max-width: 600px) {
     .imagePhone {
@@ -1048,7 +1078,6 @@ tr {
     }
 
     .reviews_title {
-
         line-height: 14px;
         font-size: 11.2834px;
         font-weight: bold;
@@ -1127,5 +1156,22 @@ tr {
         color: #FFFFFF;
         text-align: center;
         padding-top: 9px;
+    }
+    .footer {
+        margin: 40px 12%;
+    }
+    .footer_list {
+        height: 54px;
+        font-size: 5.0889px;
+        line-height: 6px;
+    }
+    .footer_list_title {
+        font-size: 7.6333px;
+        line-height: 6px;
+        margin-bottom: 7px;
+    }
+    .copyright {
+        font-size: 5.0889px;
+        line-height: 6px;
     }
 }
