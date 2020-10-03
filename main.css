@@ -436,11 +436,14 @@ tr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: white;
-    box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+   
+    box-shadow: 0px 13.8611px 55.4444px #e0e3e9;
     border-radius: 16.6333px;
     font-size: 11.0889px;
     line-height: 150%;  
+}
+.no_box_shadow {
+    box-shadow: 0px 0px 0px;
 }
 .features_1st_text {
     position: relative;
@@ -448,7 +451,13 @@ tr {
     top: -39px;
     left: 45px;
 }
-
+.features_avatar_background {
+    height: 66.63px;
+    background: #FFFFFF;
+    box-shadow: 0px 13.8611px 55.4444px #e0e3e9;
+    border-radius: 16.6333px;
+    width: 380px;
+}
 #follow_up {
     color: #26C296;
     font-weight: 800px;
@@ -460,8 +469,8 @@ tr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: white;
-    box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+    
+    
     border-radius: 16.6333px;
     font-size: 14.55px;
     line-height: 150%;
@@ -528,7 +537,7 @@ tr {
     width: 380px;
     height: 253px;
     background: white;
-    box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+    box-shadow: 0px 13.8611px 55.4444px #e0e3e9;
     border-radius: 20.7917px;
     margin-left: 15%;
 
