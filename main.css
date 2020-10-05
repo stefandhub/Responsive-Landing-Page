@@ -980,7 +980,7 @@ tr {
         width: 178.46px;
         font-size: 5px;
         font-weight: 500;
-        
+        min-width: 170px;
         margin-left: 142px;
     }
 
@@ -994,6 +994,7 @@ tr {
         font-weight: 600px;
         margin-top: -10px;
         background-color: white;
+        
     }
     .infoAndImage {
         position: relative;
