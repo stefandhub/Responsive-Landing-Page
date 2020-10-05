@@ -542,7 +542,7 @@ tr {
     width: 82%;
     top: -39px;
     left: 45px;
-    max-height: 210px;
+    
     
 }
 .features_avatar_background {
@@ -628,7 +628,7 @@ tr {
 }
 .more_info {
     position: relative;
-    left: 0px;
+    left: 10px;
     font-weight: 500;
     font-size: 9.70278px;
     line-height: 11px;
@@ -640,13 +640,23 @@ tr {
 .sync_svg {
     position: relative;
     top: -20px;
+    margin-left: 10px;
 }
 .sync_background {
+    height: 240px;
+    margin: 31px 0px 0px 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    box-shadow: 0px 13.8611px 55.4444px #e0e3e9;
+    border-radius: 16.6333px;
+    font-size: 11.0889px;
+    line-height: 150%;  
+    z-index: 10; 
     height: 352.07;
-    width: ;
-    min-width: 30%;
+    min-width: 25%;
     background-color: white;
-    z-index: 3;
     position: relative;
     left: -26%;
 }
@@ -694,7 +704,9 @@ tr {
 }
 .stay_connected_avatars {
     margin-top: 8.32px ;
-    width: 88%;
+    position: relative;
+    left: -14px;
+    width: 104%;
     display: flex;
     justify-content: space-between;
     font-size: 11.0889px;
@@ -712,7 +724,9 @@ tr {
 .stay_connected_users {
     position: relative;
     top: -4px;
-    left: 4px;
+    left: 3px;
+    
+    
 }
 .stay_connected_bottom {
     width: 88%;
@@ -857,7 +871,7 @@ tr {
 }
 .free_trial_section {
     margin: 0px 15%;
-    width: 65%;
+    width: 75%;
     height: 123.36px;
     background-color: white;
     box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
@@ -1419,8 +1433,8 @@ tr {
     }
     .sync_user {
         position: relative;
-        top: -23px;
-        margin-left: 3.7px;
+        top: -36px;
+        margin-left: 4.7px;
         font-size:  7.52227px;
         padding-top: 8px;
     }
@@ -1437,22 +1451,36 @@ tr {
         line-height: 5px;
         position: relative;
         left: 8px;
+        top: -30px;
     }
     .sync_svg {
         position: relative;
-        top: -6px;
+        top: -30px;
         left: 7.52px;
         width: 6px;
         height: 6px;
+        margin-left: 0px;
     }
     .sync_background {
-        height: 352.07;
-        width: 35%;
+        
+        width: 15%;
         background-color: white;
         z-index: 3;
         position: relative;
         left: -80px;
         top: -20px;
+        min-width: 35%;
+
+    }
+    .sync_text {
+        position: relative;
+        width: 130px;
+        top: -53px;
+        
+    }
+    .sync_fix_positioning1 {
+        position: relative;
+        top: -30px;
     }
     .sync_check_list {
         width: 150px;
@@ -1495,6 +1523,7 @@ tr {
         width: 152px;
         font-size: 5px;
         line-height: 6px;
+        left: 0px;
     }
     .stay_connected_avatars_svg {
         width: 7.52px;
