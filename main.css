@@ -17,7 +17,8 @@ body {
     
 }
 .navbar {
-    width: 620px;
+    width: 50%;
+    min-width: 320px;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
@@ -48,7 +49,7 @@ body {
 
 #circle1 {
     position: relative;
-    left: 378px;
+    left: 30%;
     top: -57px;
 }
 
@@ -65,10 +66,11 @@ body {
 .info {
     width: 36.7%;
     margin-left: 12%;
+    min-width: 330px;
 }
 
 .info_title {
-    height: 97px;
+    
     font-size: 40.2px;
     font-weight: bold;
     
@@ -76,7 +78,8 @@ body {
 
 .info_title_decoration {
     position: absolute;
- 
+    margin-top: -10px;
+    margin-left: -10px;
 }
 
 .info_text {
@@ -145,10 +148,60 @@ body {
     justify-content: space-between;
     
 }
-
+#circle4 {
+    position: absolute;
+    margin-top: -200px;
+}
+.features_navbar {
+    margin: 118px 0px 0px 18%;
+    width: 52%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.features_navbar_decoration {
+    margin: 11px 0px 45px 17%;
+    width: 52%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rectangle {
+    width: 25%;
+    height: 2.77px;
+    background: rgba(25, 67, 239, 0.1);
+}
+.rectangle2 {
+    width: 55%;
+    height: 2.77px;
+    background-color: #1943EF;
+}
+.features_navbar_items {
+    width: 24%;
+    font-size: 14.5542px;
+    line-height: 150%;
+    color: #222222;
+}
+.features_navbar_text {
+    margin-left: 6px;
+    position: relative;
+    top: -5px;
+}
+.get_reminders {
+    font-weight: 600;
+    font-size: 14.5542px;
+    color: #222222;
+}
+.features_navbar_icons {
+    width: 11,48px;
+    height: 12.99px;
+    background: rgba(25, 67, 239, 0.1);
+    border-radius: 38.2047px;
+    padding: 6px 7px;
+}
 .container {
     display: grid;
-    width: 977px;
+    width: 68%;
     height: 530px;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
@@ -169,7 +222,9 @@ body {
 }
   
 .topbar {
-    width: 769.29px;
+    width: 100%;
+    position: relative;
+    
     height: 76.83px;
     background-color: green;
     grid-row: 1 / 2;
@@ -179,7 +234,7 @@ body {
     border-radius: 0px 20.8px 0px 0px;
   }
 .hiRohan {
-    width: 695.33px;
+    width: 90%;
     height: 137.53px;
     background: #1943EF;
     box-shadow: 0px 6.93056px 27.7222px rgba(0, 0, 0, 0.05);
@@ -218,7 +273,42 @@ body {
     position: absolute;
     padding-left: 123px;
 }
-
+.sidebar_title {
+    font-weight: bold;
+    font-size: 20.7917px;
+    line-height: 25px;
+    text-align: center;
+    color: #3A3A47;
+    margin-top: 20.1px;
+    position: relative;
+    left: -40px;
+}
+#sidebar_list_divider {
+    border: 0.693056px solid #EAEDF3;
+    width: 121px;
+    height: 0px;
+    margin-top: 22px;
+    margin-left: 20.79px;
+}
+.logout_button {
+    width: 122px;
+    height: 23px;
+    background: rgb(241, 241, 241);
+    text-align: center;
+    border-radius: 5.54444px;
+    color: #919191;
+    padding-top: 9.7px;
+    font-size: 11.0889px;
+    font-weight: 600;
+    line-height: 13px;
+    position: relative;
+    top: 28px;
+    left: 20.79px;
+}
+.logout_button span {
+    position: relative;
+    top: -6px;
+}
 .mainMenu {
     display: flex;
     flex-direction: column;
@@ -247,7 +337,7 @@ body {
 }
 
 #search_topbar {
-    width: 246.23px;
+    width: 118%;
     height: 27.72px;
     background: #FBFBFD;
     border-radius: 29.8014px;
@@ -265,7 +355,7 @@ body {
 }
 
 .newTasks {
-    width: 102.57px;
+    width: 15%;
     height: 19.40px;
     background-color: #1943EF;
     border-radius: 21.4847px;
@@ -275,16 +365,16 @@ body {
     font-weight: 600;
     text-align: center;
     padding-top: 8.32px;
-    margin-left: 17px;
+    margin-left: 17%;
 }
 
 .topbar_Icons {
     position: relative;
     top: 4.9px;
-    margin-left: 84.36px;
+    margin-left: 14%;
 }
 #settings_Icon {
-    margin-left: 18.19px;
+    margin-left: 11%;
 }
 #topbar_time {
     margin-left: 55px;
@@ -436,27 +526,31 @@ tr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: auto;
+    width: 50%;
     box-shadow: 0px 13.8611px 55.4444px #e0e3e9;
     border-radius: 16.6333px;
     font-size: 11.0889px;
     line-height: 150%;  
+    z-index: 10;
 }
 .no_box_shadow {
     box-shadow: 0px 0px 0px;
 }
 .features_1st_text {
     position: relative;
-    width: 300px;
+    min-width:  150px;
+    width: 82%;
     top: -39px;
     left: 45px;
+    max-height: 210px;
+    
 }
 .features_avatar_background {
     height: 66.63px;
     background: white;
     box-shadow: 0px 13.8611px 55.4444px #e0e3e9;
     border-radius: 16.6333px;
-    width: 380px;
+    width: 100%;
 }
 .avatar_positioning {
     position: relative;
@@ -474,7 +568,7 @@ tr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    min-width: 50%;
     
     border-radius: 16.6333px;
     font-size: 14.55px;
@@ -484,10 +578,11 @@ tr {
     font-size: 25px;
     color: #222222;
     font-weight: bold;
+    width: auto;
 }
 
 .features_2nd_text {
-    width: 343px;
+    width: 50%;
     font-size: 14px;
     color: rgb(115, 115, 141)
     
@@ -503,16 +598,20 @@ tr {
     position: relative;
     left: -25px;
 }
+#circle5 {
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 40px;
+    z-index: 1;
+}
 #sync_icon {
     padding: 13px 14px;
     border-radius: 32px;
     background-color: #E4F7F2;
     margin-left: 12%;
-    margin-top: 103px;
+    margin-top: 10%;
 }
-.avatar_fix_positioning {
 
-}
 .sync_user {
     position: relative;
     top: -57px;
@@ -535,15 +634,39 @@ tr {
     line-height: 11px;
     color: rgba(34, 34, 34, 0.6);
 }
-
+.features {
+    z-index: 3;
+}
 .sync_svg {
     position: relative;
     top: -20px;
 }
+.sync_background {
+    height: 352.07;
+    width: ;
+    min-width: 30%;
+    background-color: white;
+    z-index: 3;
+    position: relative;
+    left: -26%;
+}
+.sync_check_list {
+    width: 350px;
+}
+.support {
+    position: relative;
+    left: -75px;
+}
+#circle6 {
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 10%;
+    z-index: 1;
+}
 
 .stay_connected_1st {
-    width: 380px;
-    height: 253px;
+    width: 50%;
+    height: auto;
     background: white;
     box-shadow: 0px 13.8611px 55.4444px #e0e3e9;
     border-radius: 20.7917px;
@@ -557,9 +680,10 @@ tr {
     font-weight: 600;
 }
 .stay_connected_subtitle {
-    margin: 2.77px 0px 0px 16px;
+    margin: 1% 0px 0px 16px;
     color: rgba(34, 34, 34, 0.8);
     font-size: 11px;
+    
 }
 .sending_to {
     color: rgba(34, 34, 34, 0.6);
@@ -570,7 +694,7 @@ tr {
 }
 .stay_connected_avatars {
     margin-top: 8.32px ;
-    width: 346px;
+    width: 88%;
     display: flex;
     justify-content: space-between;
     font-size: 11.0889px;
@@ -578,7 +702,7 @@ tr {
     color: rgba(34, 34, 34, 0.8);
 }
 .stay_connected_text {
-    width: 307px;
+    width: 80%;
     margin: 22px 27px 0px 30px;
     font-weight: 500;
     font-size: 9.70278px;
@@ -591,7 +715,7 @@ tr {
     left: 4px;
 }
 .stay_connected_bottom {
-    width: 344px;
+    width: 88%;
     margin: 26px 18px 11px 16px ;
     display: flex;
     justify-content: space-between;
@@ -623,6 +747,48 @@ tr {
     text-align: center;
     padding-top: 7.3px;
 }
+.avatar_group1 {
+    position: absolute;
+    width: 1550px;
+    display: flex;
+    justify-content: space-between;
+}
+#avatar1 {
+    position: relative;
+    top: 30px;
+    left: 10%;
+}
+#avatar2 {
+    position: relative;
+    top: 100px;
+    left: -15%;
+    width: 75.54px;
+    height: 75.54px;
+    border: 0.693056px solid #F5AC18;
+    border-radius: 50%;
+    
+}
+#avatar3 {
+    position: relative;
+    top: 30px;
+    left: 2%;
+}
+#avatar4 {
+    position: relative;
+    top: -20px;
+    left: -250px;
+}
+.avatar_group2 {
+    position: absolute;
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 16% 0px 0px 4%;
+}
+#avatar5 {
+    position: relative;
+    top: 40px;
+}
 .reviews_title {
     text-align: center;
     font-size: 24.95px;
@@ -637,24 +803,32 @@ tr {
     margin-top: 51px;
    
 }
+.user_avatar, .user_info, .quote_svg {
+    z-index: 3;
+}
 .user_info {
     font-size: 14px;
     position: relative;
     top: -5px;
     padding-bottom: 10px ;
 }
+.quote {
+    position: absolute;
+    margin: 93px 0px 0px 237px;
+}
 .reviews_text_section {
     width: 501.77px;
     height: 301.48px;
-    
+    background-color: white ;
     box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
     border-radius: 8.31667px;
-    margin: 8px auto 0px;
+    margin: 30px auto 0px;
     display: flex;
     flex-direction: column;
     align-content: end;
     position: relative;
     top: -130px;
+    z-index: 2;
     
 }
 .reviews_text {
@@ -669,16 +843,28 @@ tr {
     position: relative;
     top: -100px;
 }
+#reviews_section_decoration {
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 9.5%;
+    z-index: 1;
+}
+#circle7 {
+    position: absolute;
+    margin-left: 9%;
+    margin-top: -8%;
+    z-index: 1;
+}
 .free_trial_section {
     margin: 0px 15%;
-    width: 940.86px;
+    width: 65%;
     height: 123.36px;
-    
+    background-color: white;
     box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
     border-radius: 8.31667px;
     display: flex;
     flex-direction: row;
-    
+    z-index: 2;
 }
 .free_trial_text {
     display: flex;
@@ -691,6 +877,7 @@ tr {
     font-size: 22px;
     line-height: 30px;
     color: #222222;
+    min-width: 200px;
 }
 .free_trial_text span {
     font-weight: 500;
@@ -702,7 +889,7 @@ tr {
 }
 .try_it_button {
     margin-top: 41px;
-    margin-left: 130px;
+    margin-left: 25%;
     height: 27px;
     width: 156px;
     background-color: #26C296;
@@ -713,6 +900,7 @@ tr {
     color: #FFFFFF;
     text-align: center;
     padding-top: 15px;
+    min-width: 80px;
 }
 .footer {
     display: flex;
@@ -744,8 +932,14 @@ tr {
     line-height: 13px;
     color: #73738D;
 }
+#circle8 {
+    position: relative;
+    margin-left: 88%;
+    top: -160px;
+    
+}
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .imagePhone {
         display: none;
        
@@ -767,12 +961,14 @@ tr {
         height: 21px;
         font-size: 18px;
         font-weight: bold;
+        margin-left: 30px;
     }
 
     .title1 {
         width: 47.01px;
         font-size: 11px;
         margin-top: 24px;
+        
     }
     #circle1 {
         position: relative;
@@ -785,7 +981,7 @@ tr {
         font-size: 5px;
         font-weight: 500;
         
-        margin-left: 122px;
+        margin-left: 142px;
     }
 
     .navbar_button {
@@ -813,6 +1009,7 @@ tr {
         position: relative;
         line-height: 9px;
         text-align: center;
+        margin-left: 30px;
     }
 
     #emailId {
@@ -823,7 +1020,7 @@ tr {
         padding-left: 20px;
         position: relative;
         top: 16px;
-        left: 50px;
+        left: 70px;
     }
     .info_button {
         width: 71px;
@@ -833,20 +1030,71 @@ tr {
         border-radius: 33.96px;
         position: relative;
         top: 11px;
-        left: -28px;
+        left: 2px;
         font-size: 7px;
     }
     .checks {
         position: relative;
         top: 25px;
-        left: 50px;
+        left: 70px;
         width: 200px;
         font-size: 5px;    
+    }
+    #circle4  {
+        display: none;
     }
     .container {
         display: grid;
         width: 360px;
         height: 224px;
+    }
+    .features_navbar {
+        margin: 0px 0px 0px 22%;
+        width: 52%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .features_navbar_decoration {
+        margin: 5px 0px 19px 22%;
+        width: 52%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .rectangle {
+        width: 77px;
+        height: 1.25px;
+        background: #DBF1F0;
+    }
+    .rectangle2 {
+        width: 45.51px;
+        height: 1.25px;
+        background-color:#26C296;
+    }
+    .features_navbar_items {
+        width: 75px;
+        font-size: 6.58199px;
+        line-height: 150%;
+        color: #73738D;
+
+    }
+    .features_navbar_text {
+        margin-left: 2.5px;
+        position: relative;
+        top: -5px;
+    }
+    .get_reminders {
+        
+        font-size: 6.58199px;
+        
+    }
+    .features_navbar_icons {
+        width: 5,19px;
+        height: 5.88px;
+        background: rgba(25, 67, 239, 0.1);
+        border-radius: 38.2047px;
+        padding: 3px 3px;
     }
 
     .sidebar {
@@ -872,6 +1120,44 @@ tr {
         margin-left: 11.29px;
         border-radius:5px;
     }
+    .sidebar_title {
+        font-weight: bold;
+        font-size: 9.40284px;
+        line-height: 11px;
+        text-align: center;
+        color: #3A3A47;
+        margin-top: 9px;
+        position: relative;
+        left: -10px;
+    }
+    #sidebar_list_divider {
+        border: 0.313428px solid #EAEDF3;
+        width: 55px;
+        height: 0px;
+        margin-left: 9.4px;
+        position: relative;
+        top: 80px;
+    }
+    .logout_button {
+        width: 55px;
+        height: 13px;
+        background: rgb(241, 241, 241);
+        text-align: center;
+        border-radius: 2.50742px;
+        padding-top: 3.8px;
+        font-size: 5.01485px;
+        top: 105px;
+        left: 10.79px;
+    }
+    .logout_button span {
+        position: relative;
+        top: -1px;
+    }
+    #logout_icon {
+        width: 5.64px;
+        height: 5.64px;
+    }
+
     .mainMenu {
         width: 22px;
         height: 6px;
@@ -1097,6 +1383,14 @@ tr {
         position: relative;
         left: -10px;
     }
+    #circle5 {
+        position: absolute;
+        margin-left: 3%;
+        margin-top: 20px;
+        height: 54px;
+        width: 54px;
+        z-index: 1;
+    }
     .features_avatars {
         width: 15px;
         height: 15px;
@@ -1129,6 +1423,7 @@ tr {
         font-size:  7.52227px;
         padding-top: 8px;
     }
+
     #sync_user_subtitle {
         position: relative;
         top: 2px;
@@ -1148,6 +1443,30 @@ tr {
         left: 7.52px;
         width: 6px;
         height: 6px;
+    }
+    .sync_background {
+        height: 352.07;
+        width: 35%;
+        background-color: white;
+        z-index: 3;
+        position: relative;
+        left: -80px;
+        top: -20px;
+    }
+    .sync_check_list {
+        width: 150px;
+    }
+    .support {
+        position: relative;
+        left: -25px;
+    }
+    #circle6 {
+        position: absolute;
+        margin-left: 72%;
+        margin-top: 19%;
+        z-index: 1;
+        width: 54px;
+        height: 54px;
     }
     .stay_connected_1st {
         width: 182px;
@@ -1220,6 +1539,55 @@ tr {
         top: 5px;
         padding-top: 3.3px;
     }
+    .avatar_group1 {
+     width: 700px;
+    }
+    #avatar1 {
+        top: 10px;
+        left: 2%;
+        width: 28.54px;
+        height: 32.54px;
+    }
+    #avatar2 {
+        top: 40px;
+        left: -18%;
+        width: 43.54px;
+        height: 43.54px;
+    }
+    #avatar3 {
+        top: 15px;
+        left: -10%;
+        width: 29px;
+        height: 29px;
+    }
+    #avatar4 {
+        position: relative;
+        top: -10px;
+        left: -220px;
+       
+        height: 45px;
+    }
+    .avatar_group2 {
+        position: absolute;
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        margin: 16% 0px 0px 4%;
+    }
+    #avatar5 {
+        position: relative;
+        top: 40px;
+        left: -27px;
+        height: 45px;
+        width: 45px;
+    }
+    #avatar6 {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        top: 40px;
+        left: 40px;
+    }
     .reviews_title {
         line-height: 14px;
         font-size: 11.2834px;
@@ -1240,14 +1608,17 @@ tr {
         top: -5px;
         padding-bottom: 2px ;
     }
-    .quote_svg {
-        width: 5.16;
+    .quote_svg{
+        width: 5.16px;
         height: 7.5px;
     }
     .reviews_text_section {
         width: 226.77px;
         height: 136.48px;
-        margin: 8px auto 0px;    
+        margin: 40px auto 0px;    
+    }
+    .quote {
+    display: none;
     }
     .reviews_text {
         font-size: 6.58199px;
@@ -1255,7 +1626,7 @@ tr {
         height: 88px;
         color: #73738D;
         text-align: center;
-        margin: 110px 10px 17px;
+        margin: 80px 10px 17px;
     }
     .reviews_text_section img{
         width: 50.15px;
@@ -1267,9 +1638,27 @@ tr {
         height: 2.5px;
         top: -95px;
     }
+    #reviews_section_decoration {
+        width: 21px;
+        height: 20px;
+        margin-top: -139px;
+        margin-left: 15.5%;
+        
+    }
+    #circle7 {
+    display: none;
+    }
+    #circle8 {
+        position: relative;
+        margin-left: 88%;
+        top: -90px;
+        width: 59px;
+        height: 59px;
+        
+    }
     .free_trial_section {
         margin: 0px 10%;
-        width: 400.86px;
+        width: 500.86px;
         height: 55.36px;
         background-color: white;
 
@@ -1279,6 +1668,7 @@ tr {
         height: 13px;
         font-size: 9px;
         line-height: 14px;
+        width: 310px;
     }
     .free_trial_text span {
         font-weight: 500;
@@ -1299,6 +1689,8 @@ tr {
         color: #FFFFFF;
         text-align: center;
         padding-top: 9px;
+        position: relative;
+        left: -80px;
     }
     .footer {
         margin: 40px 12%;
@@ -1316,5 +1708,12 @@ tr {
     .copyright {
         font-size: 5.0889px;
         line-height: 6px;
+    }
+    .info_title_decoration {
+        position: absolute;
+        width: 21px;
+        height: 20px;
+        margin-left: 20px;
+        margin-top: -10px;
     }
 }
